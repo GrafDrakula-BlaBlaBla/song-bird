@@ -1,0 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.songbirdApp {
+    max-width: 90%;
+    margin: 0 auto;
+}

@@ -1,0 +1,20 @@
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.menuItems {
+    /* width: 100px; */
+    height: 50px;
+    padding: 17px;
+    box-sizing: border-box;
+    background: lightblue;
+    text-align: center;
+    transition: all 1s ease;
+}
+
+.menuItems:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
