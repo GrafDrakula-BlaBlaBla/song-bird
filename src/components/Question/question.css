@@ -1,0 +1,19 @@
+.Question {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.image {
+    margin-right: 100px;
+}
+
+.image img{
+    width: 300px;
+    height: 200px;
+}
+
+.label {
+    background: lightsalmon;
+    margin-bottom: 10px;
+}
