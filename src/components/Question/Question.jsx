@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import Resource from '../../services/resource';
-import RandomNumber from '../../services/random';
+import { randomNumber as RandomNumber } from '../../services/random';
 
 import './question.css';
 // import image from '../../img/ricardo.jpg';
