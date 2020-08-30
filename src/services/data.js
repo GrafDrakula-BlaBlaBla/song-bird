@@ -1,4 +1,4 @@
-export const arrNameBirds = [
+export const arrBirdNames = [
     "Ciconia ciconia",
     "Ciconia nigra",
     "Corvus frugilegus",

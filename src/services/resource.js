@@ -39,7 +39,7 @@ export default class Resource {
     async getVoiceBird(id, birdName = 'Troglodytes') {
         // return this.getDataVoice(`${this._urlVoice}${this._birdName}`);
         const result = await this.getDataVoice(`${this._urlVoice}${birdName}`);
-        console.log(result.recordings[id]);
+
 
         return result.recordings[id]
     }

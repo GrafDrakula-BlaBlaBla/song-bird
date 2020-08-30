@@ -4,6 +4,7 @@ import Header from '../Header/Header';
 import Menu from '../Menu/Menu';
 import Question from '../Question/Question';
 import Answer from '../Answer/Answer';
+import Description from '../Description/Description';
 
 
 import './app.css'
@@ -16,6 +17,7 @@ class App extends Component {
                 <Menu />
                 <Question />
                 <Answer />
+                <Description />
             </div>
 
         )
