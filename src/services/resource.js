@@ -44,10 +44,14 @@ export default class Resource {
         return result.recordings[id]
     }
 
-    async getImgBird(id, birdName = 'Troglodytes') {
+    async getImgBird(birdName = 'Troglodytes') {
         const result = await this.getDataImg(`${this._urlImg}${birdName}`);
-        return result.photos.photo[id]
+        return result.photos.photo
     };
+    // async getImgBird(id, birdName = 'Troglodytes') {
+    //     const result = await this.getDataImg(`${this._urlImg}${birdName}`);
+    //     return result.photos.photo[id]
+    // };
 }
 
 // const res = new Resource();

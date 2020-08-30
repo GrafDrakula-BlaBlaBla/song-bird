@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
-import Resource from '../../services/resource';
-import { randomNumber as RandomNumber } from '../../services/random';
+// import Resource from '../../services/resource';
+// import { randomNumber as RandomNumber } from '../../services/random';
 
 import './question.css';
 // import image from '../../img/ricardo.jpg';
@@ -9,47 +9,47 @@ import './question.css';
 
 class Question extends Component {
 
-    resource = new Resource();
-    id = RandomNumber()
+    // resource = new Resource();
+    // id = RandomNumber()
 
-    state = {
-        urlPhoto: null,
-        genus: null,
-        audioTrack: null
-    }
+    // state = {
+    //     urlPhoto: null,
+    //     genus: null,
+    //     audioTrack: null
+    // }
 
-    constructor() {
-        super();
-        this.randomImgBird();
-        // debugger
-        this.voiceBird();
-    }
+    // constructor() {
+    //     super();
+    //     this.randomImgBird();
+    //     // debugger
+    //     this.voiceBird();
+    // }
 
-    randomImgBird() {
-        this.resource.getImgBird(this.id)
-            .then((photo) => {
-                this.setState({
-                    urlPhoto: photo['url_m']
-                })
-            })
-    }
+    // randomImgBird() {
+    //     this.resource.getImgBird(this.id)
+    //         .then((photo) => {
+    //             this.setState({
+    //                 urlPhoto: photo['url_m']
+    //             })
+    //         })
+    // }
 
-    voiceBird() {
-        this.resource.getVoiceBird(this.id)
-            .then((audioTrack) => {
-                this.setState({
-                    audioTrack: audioTrack.file
-                })
-            })
-    }
+    // voiceBird() {
+    //     this.resource.getVoiceBird(this.id)
+    //         .then((audioTrack) => {
+    //             this.setState({
+    //                 audioTrack: audioTrack.file
+    //             })
+    //         })
+    // }
 
     render() {
 
-        const { urlPhoto, genus, audioTrack } = this.state;
+        // const { urlPhoto, genus, audioTrack } = this.state;
 
         return (
             <div className='Question'>
-                <div className='image'>
+                {/* <div className='image'>
                     <img src={`${urlPhoto}`} />
                 </div>
                 <div className='description'>
@@ -60,7 +60,7 @@ class Question extends Component {
                         <span>Audio Track</span>
                     </audio>
 
-                </div>
+                </div> */}
             </div>
         )
     };
