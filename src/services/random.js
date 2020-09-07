@@ -1,4 +1,3 @@
-// import { arrBirdNamesTest } from './data';
 
 export const randomNumber = (min = 1, max = 20) => {
     return Math.floor(Math.random() * (max - min + min)) + min;

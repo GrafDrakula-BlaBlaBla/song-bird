@@ -33,36 +33,20 @@ export default class Resource {
 
         const result = JSON.parse(stringData.match(ex)[0]);
 
-        return result
+        return result;
     }
 
+    async getImgBird(birdName = 'Troglodytes', id) {
+
+        const result = await this.getDataImg(`${this._urlImg}${birdName}`);
+
+        return result.photos.photo[id];
+    };
+
     async getVoiceBird(birdName = 'Troglodytes', id) {
-        // return this.getDataVoice(`${this._urlVoice}${this._birdName}`);
+
         const result = await this.getDataVoice(`${this._urlVoice}${birdName}`);
 
         return result.recordings[id]
     }
-
-    async getImgBird(birdName = 'Troglodytes', id) {
-        const result = await this.getDataImg(`${this._urlImg}${birdName}`);
-        return result.photos.photo[id];
-    };
-    // async getImgBird(id, birdName = 'Troglodytes') {
-    //     const result = await this.getDataImg(`${this._urlImg}${birdName}`);
-    //     return result.photos.photo[id]
-    // };
 }
-
-// const res = new Resource();
-
-// res.getVoiceBird(/*birdName*/).then((recordings) => {
-//     recordings.forEach(audio => {
-//         console.log(audio.file - name);
-//     })
-// })
-// debugger
-//В then приходит массив из функции getImgBird
-// res.getImgBird(id).then((photo) => {
-//     // console.log(photo['url_m']);
-//     return photo['url_m'];
-// })

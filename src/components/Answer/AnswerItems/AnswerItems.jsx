@@ -1,10 +1,17 @@
 import React from 'react';
 
-const AnswerItems = ({ arr }) => {
+const AnswerItems = ({ birds }) => {
 
-    const listAnswers = arr.map((birdName, i) => <li key={`${i}+${birdName}`}>{birdName}</li>);
+    const listAnswers = birds.map((bird, i) =>
+        <li key={`${i}+${bird.latinName}`}>
+            {`${bird.latinName} (${bird.russianName})`}
+        </li>);
 
-    return listAnswers;
+    return (
+        <ul className='listAnswers'>
+            {listAnswers}
+        </ul>
+    )
 
 }
 

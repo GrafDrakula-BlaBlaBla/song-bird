@@ -1,39 +1,53 @@
 import React, { Component } from 'react';
+
 import AnswerItems from './AnswerItems/AnswerItems'
 
+import './answer.css'
 
-import { randomArrBirdName } from '../../services/random';
-import { arrBirdNamesTest } from '../../services/data';
 
-export default class Answer extends Component {
-    state = {
-        arrBirdNames: []
-    }
+const Answer = ({ birds }) => {
 
-    constructor() {
-        super()
-    }
+    return (
 
-    componentDidMount() {
-        const arr = randomArrBirdName(arrBirdNames, 5)
-        this.setState({
-            arrBirdNames: arr
-        })
-    }
-
-    render() {
-        const { arrBirdNames } = this.state
-        return (
-            < div className='blockAnswer' >
-                <ul className='listAnswers'>
-                    <AnswerItems
-                        arr={arrBirdNames}
-                    />
-                </ul>
-            </div >
-        )
-    }
+        <div className='blockAnswer'>
+            <AnswerItems
+                birds={birds}
+            />
+        </div>
+    )
 }
+
+export default Answer;
+
+// export default class Answer extends Component {
+//     state = {
+//         arrBirdNames: []
+//     }
+
+//     constructor() {
+//         super()
+//     }
+
+//     componentDidMount() {
+//         const arr = randomArrBirdName(arrBirdNames, 5)
+//         this.setState({
+//             arrBirdNames: arr
+//         })
+//     }
+
+//     render() {
+//         const { arrBirdNames } = this.state
+//         return (
+//             < div className='blockAnswer' >
+//                 <ul className='listAnswers'>
+//                     <AnswerItems
+//                         arr={arrBirdNames}
+//                     />
+//                 </ul>
+//             </div >
+//         )
+//     }
+// }
 
 
 // //------------
