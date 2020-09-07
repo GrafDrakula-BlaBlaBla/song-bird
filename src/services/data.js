@@ -1,4 +1,4 @@
-export const arrBirdNames = [
+export const arrBirdNamesFull = [
     "Ciconia ciconia",
     "Ciconia nigra",
     "Corvus frugilegus",
@@ -31,5 +31,12 @@ export const arrBirdNames = [
     "Acanthis flammea",
     "Spinus spinus",
     "Carduelis carduelis"
+]
+export const arrBirdNamesTest = [
+    "Acrocephalus dumetorum",
+    "Ficedula parva",
+    "Acrocephalus scirpaceus",
+    "Caprimulgus europaeus",
+    "Acrocephalus palustris"
 ]
 

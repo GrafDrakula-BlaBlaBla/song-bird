@@ -36,17 +36,16 @@ export default class Resource {
         return result
     }
 
-    async getVoiceBird(id, birdName = 'Troglodytes') {
+    async getVoiceBird(birdName = 'Troglodytes', id) {
         // return this.getDataVoice(`${this._urlVoice}${this._birdName}`);
         const result = await this.getDataVoice(`${this._urlVoice}${birdName}`);
-
 
         return result.recordings[id]
     }
 
-    async getImgBird(birdName = 'Troglodytes') {
+    async getImgBird(birdName = 'Troglodytes', id) {
         const result = await this.getDataImg(`${this._urlImg}${birdName}`);
-        return result.photos.photo
+        return result.photos.photo[id];
     };
     // async getImgBird(id, birdName = 'Troglodytes') {
     //     const result = await this.getDataImg(`${this._urlImg}${birdName}`);
