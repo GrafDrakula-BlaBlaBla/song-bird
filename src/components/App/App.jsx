@@ -9,7 +9,7 @@ import Header from '../Header/Header';
 import Menu from '../Menu/Menu';
 import Question from '../Question/Question';
 import Answer from '../Answer/Answer';
-// import Description from '../Description/Description';
+import Description from '../Description/Description';
 
 
 import './app.css'
@@ -46,6 +46,7 @@ class App extends Component {
                     this._resource.getVoiceBird(birdName, id)
                         .then(
                             response => {
+                                console.log(response)
                                 obj.russianName = response.en;
                                 obj.sound = response.file;
                                 arrObj.push(obj)
@@ -84,10 +85,11 @@ class App extends Component {
                             />
                             <Answer
                                 birds={birds}
+                                idAnswer={this._id}
                             />
                         </React.Fragment>
                 }
-                {/* <Description /> */}
+
             </div>
 
         )

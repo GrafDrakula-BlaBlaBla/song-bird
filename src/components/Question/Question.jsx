@@ -2,7 +2,7 @@ import React from 'react';
 
 import './question.css';
 
-const Question = ({ birds, idQuestion }) => {
+const Question = ({ birds, idQuestion, isLoading }) => {
 
 
     return (

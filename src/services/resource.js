@@ -49,4 +49,13 @@ export default class Resource {
 
         return result.recordings[id]
     }
+
+    // async getDescription(birdName = 'Troglodytes', id) {
+
+    //     const result = await this.getDataVoice(`${this._urlVoice}${birdName}&rmk:playback`);
+
+    //     console.log('getDescription ', result)
+
+    //     return result.recordings[id]
+    // }
 }

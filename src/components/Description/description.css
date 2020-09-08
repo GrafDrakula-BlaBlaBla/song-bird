@@ -1,0 +1,14 @@
+ .Description {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.audioTrack {
+    width: 50%;
+}
+
+.descriptionImage img{
+    width: 150px;
+    height: 100px;
+}

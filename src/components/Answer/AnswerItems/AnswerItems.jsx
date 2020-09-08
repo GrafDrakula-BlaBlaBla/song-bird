@@ -1,5 +1,8 @@
 import React from 'react';
 
+
+import './answerItems.css'
+
 const AnswerItems = ({ birds }) => {
 
     const listAnswers = birds.map((bird, i) =>
